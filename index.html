@@ -12,13 +12,14 @@
     <!-- Custom CSS Link -->
     <link rel="stylesheet" href="css/customstyle.css">
     <!-- Font Awesome -->
-    <!-- Custom Styles -->
+    <script src="https://kit.fontawesome.com/4e7241b230.js" crossorigin="anonymous"></script>
     <!-- Fav Icon -->
+    <link rel="icon" href="images/honda-icon.png">
 </head>
 
 <body">
     <!-- Header Start -->
-    <header style="width: 100%; background-color: #264653; height: 698px;">
+    <header class="honda-cbr-header">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid me-5">
@@ -43,15 +44,60 @@
                             </li>
                         </ul>
                     </div>
-                    <div style="margin-left: 40px;">
-                        <button class="btn honda-cbr-button-color" type="submit">Login</button>
+
+                    <!-- Log In -->
+                    <div class="nav-item login-button">
+                        <button class="btn honda-cbr-button-color ms-5 text-white" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">Login</button>
+
+                        <div class="offcanvas offcanvas-end p-2" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Welcome to Honda CBR</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form>
+                                    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                    <br>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+                                    <br>
+
+                                    <div class="checkbox mb-3">
+                                        <label>
+                                            <input type="checkbox" value="remember-me"> Remember me
+                                        </label>
+                                    </div>
+                                    <button class="w-100 btn btn-lg honda-cbr-button-color" type="submit">Sign
+                                        in</button>
+                                    <br>
+                                    <br>
+                                    <a href="#" class="d-flex justify-content-center align-items-center forget"
+                                        target="blank">Forget
+                                        password?</a>
+                                    <p class="mt-5 mb-3 text-muted"> &copy; 2021. All rights reserved by Tonmoy.</p>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- Banner -->
         <div class="container px-4 d-flex align-items-center">
-            <div class="row align-items-center gx-5">
+            <div class="row align-items-center gx-5 honda-cbr-banner">
                 <div class="col-sm-12 col-lg-6">
                     <div class="p-3 w-75">
                         <p class="honda-cbr-banner-paragraph-text-color honda-cbr-banner-paragraph-text-size">
@@ -105,6 +151,7 @@
 
     <!-- Main Start -->
     <main>
+        <!-- Featured Bikes -->
         <section class="container my-5">
             <div class="container">
                 <div class="d-flex align-items-center flex-column">
@@ -112,20 +159,386 @@
                         <h1>Fetured Bikes 2021</h1>
                     </div>
                     <div class="col mb-5">
-                        <p style="color: #E76F51;">Best Bike Collection</p>
+                        <p class="featured-bikes-paragraph">Best Bike Collection</p>
                     </div>
                     <div class="col mt-5 align-self-center">
                         <div class="row row-cols-lg-3 row-cols-sm-1 align-content-center">
                             <div class="d-flex justify-content-center">
-                                <img class="w-50 h-75" style="filter: grayscale(1);" src="images/feature-bike.png"
+                                <img class="img-fluid w-75 featured-bikes-gray-image" src="images/feature-bike.png"
                                     alt="">
                             </div>
                             <div class="d-flex justify-content-center">
-                                <img class="w-50 h-75" src="images/feature-bike.png" alt="">
+                                <img class="img-fluid w-75" src="images/feature-bike.png" alt="">
                             </div>
                             <div class="d-flex justify-content-center">
-                                <img class="w-50 h-75" style="filter: grayscale(1);" src="images/feature-bike.png"
+                                <img class="img-fluid w-75 featured-bikes-gray-image" src="images/feature-bike.png"
                                     alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News -->
+        <section class="container my-5">
+            <div class="container">
+                <div class="d-flex align-items-center flex-column">
+                    <div class="col">
+                        <h1>Latest News</h1>
+                    </div>
+                    <div class="col mt-5 align-self-center">
+                        <div class="row row-cols-lg-3 row-cols-sm-1 align-content-center">
+                            <div class="d-flex justify-content-center">
+                                <div class="card row justify-content-center" style="width: 18rem;">
+                                    <img src="images/bike-1.png" class="card-img-top ps-3 pt-3" style="width: 18rem;"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ducati XDIAVEL S-73</h5>
+                                        <p class="card-text">The XDiavel family is back for 2021, and this time with a
+                                            number of exciting new models for us to fawn over. Unlike the regular
+                                            Diavel, the ...</p>
+                                        <a href="https://www.webbikeworld.com/2021-ducati-motorcycle-lineup/"
+                                            class="btn honda-cbr-button-color">Read More</a>
+                                    </div>
+                                </div>>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="card row justify-content-center" style="width: 18rem;">
+                                    <img src="images/bike-2.png" class="card-img-top ps-3 pt-3" style="width: 18rem;"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Motorcycles & Scooters</h5>
+                                        <p class="card-text">Some of the major electric motorcycles & scooters market
+                                            players are CAKE 0 Emission AB, Mahindra GenZe, Lightning Motorcycles, ...
+                                        </p>
+                                        <a href="https://www.globenewswire.com/en/news-release/2021/06/21/2250602/0/en/Electric-Motorcycles-Scooters-Market-to-hit-40-Bn-by-2027-Global-Market-Insights-Inc.html"
+                                            class="btn honda-cbr-button-color">Read More</a>
+                                    </div>
+                                </div>>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="card row justify-content-center" style="width: 18rem;">
+                                    <img src="images/bike-3.png" class="card-img-top ps-3 pt-3" style="width: 18rem;"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2021 Honda CBR500R</h5>
+                                        <p class="card-text">Honda Is it any wonder why the Honda CBR500R is one of our
+                                            most popular sportbikes? It just gets so many things right. Price...</p>
+                                        <a href="https://powersports.honda.com/street/sport/cbr500r"
+                                            class="btn honda-cbr-button-color">Read More</a>
+                                    </div>
+                                </div>>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Happy Clients Says -->
+        <section class="container my-5">
+            <div class="container">
+                <div class="d-flex align-items-center flex-column">
+                    <div class="col">
+                        <h1>Happy <span style="color: #E76F51;">Clients says</span></h1>
+                    </div>
+                    <div class="col mt-5 align-self-center">
+                        <div class="row row-cols-lg-3 row-cols-sm-1 align-content-center">
+                            <div class="d-flex justify-content-center">
+                                <div class="card text-center">
+                                    <div class="card-header bg-white border border-white">
+                                        <img class="w-50 h-100" src="images/user-1.png" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Slate helps you see how
+                                            many more days you need
+                                            to work to reach your financial
+                                            goal for the month and year.</p>
+                                        <div>
+                                            <i class="fas fa-star " style="color: #FFC014;"></i>
+                                            <i class="fas fa-star" style="color: #FFC014;"></i>
+                                            <i class="fas fa-star" style="color: #FFC014;"></i>
+                                            <i class="fas fa-star" style="color: #FFC014;"></i>
+                                            <i class="far fa-star" style="color: #FFC014;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="text-primary"><b>Regina Miles</b></p>
+                                        <b>Banker</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="card text-center">
+                                    <div class="card-header bg-white border border-white">
+                                        <img class="w-50 h-100" src="images/user-2.png" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Slate helps you see how
+                                            many more days you need
+                                            to work to reach your financial
+                                            goal for the month and year.</p>
+                                        <div>
+                                            <i class="fas fa-star " style="color: #FFC014;"></i>
+                                            <i class="fas fa-star" style="color: #FFC014;"></i>
+                                            <i class="fas fa-star" style="color: #FFC014;"></i>
+                                            <i class="fas fa-star" style="color: #FFC014;"></i>
+                                            <i class="far fa-star" style="color: #FFC014;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="text-primary"><b>Regina Miles</b></p>
+                                        <b>Banker</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="card text-center">
+                                    <div class="card-header bg-white border border-white">
+                                        <img class="w-50 h-100" src="images/user-3.png" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Slate helps you see how
+                                            many more days you need
+                                            to work to reach your financial
+                                            goal for the month and year.</p>
+                                        <div>
+                                            <i class="fas fa-star " style="color: #FFC014;"></i>
+                                            <i class="fas fa-star" style="color: #FFC014;"></i>
+                                            <i class="fas fa-star" style="color: #FFC014;"></i>
+                                            <i class="fas fa-star" style="color: #FFC014;"></i>
+                                            <i class="far fa-star" style="color: #FFC014;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="text-primary"><b>Regina Miles</b></p>
+                                        <b>Banker</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Frequently Asked Questions -->
+        <section class="container my-5">
+            <div class="container">
+                <div class="d-flex align-items-center flex-column">
+                    <div class="col">
+                        <h1>Frequently Asked <span style="color: #E76F51;">Questions</span></h1>
+                    </div>
+                    <div class="col mt-5 align-self-center">
+                        <div class="row row-cols-lg-2 row-cols-sm-1 align-content-center">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="card text-center border border-white">
+                                    <div class="card-body">
+                                        <img class="w-75 h-75" src="images/faq.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center justify-content-center">
+                                <div class="row gy-3 accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="border border-1 accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                                aria-controls="panelsStayOpen-collapseOne">
+                                                What are the most imporatant things I should know about riding a bike?
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <div class="accordion-body">
+                                                Safety First! Always obey the rules of the road. Obey all traffic
+                                                signals, signs, and laws. Get in the mindset of “driving” your bike—not
+                                                just “riding” your bike. This will help you be a more focused and
+                                                legally compliant bike rider.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border border-1 accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                How can I tell if my helmet is old and I need a
+                                                new one?
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="panelsStayOpen-headingTwo">
+                                            <div class="accordion-body">
+                                                The 'manufactured date' sticker, which can usually be found under the
+                                                comfort liner, is used as the benchmark by helmet manufacturers for when
+                                                you should replace your helmet. Helmet manufacturers recommend that you
+                                                replace your helmet 3 to 5 years from the 'date of manufacture'.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border border-1 accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                My bike has been in storage is it safe to ride?
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="panelsStayOpen-headingThree">
+                                            <div class="accordion-body">
+                                                Before heading out on a bike ride, there are a few things you should do
+                                                to make sure that your bicycle is safe. ... Check your tire pressure.
+                                                ... Check wheel quick-releases. ... Check your brakes. ... Check your
+                                                wheels. ... Check your crank arms and pedals. ... Check stem and
+                                                headset. ... Check your chain
+
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border border-1 accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                                What rules should I follow when riding my bike?
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="panelsStayOpen-headingFour">
+                                            <div class="accordion-body">
+                                                When approaching vehicles or other bicycles that are stopped or
+                                                traveling at slower speed ahead of you, you must yield until it is safe
+                                                to pass. Like all other vehicles on the road, cyclists on bikes are
+                                                required to yield to pedestrians...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Purchase online -->
+        <section class="container my-5">
+            <div class="container">
+                <div class="d-flex align-items-center flex-column">
+                    <div class="col">
+                        <h1>Purchase from <span style="color: #E76F51;">Online Shops</span></h1>
+                    </div>
+                    <div class="col mt-5 align-self-center">
+                        <div class="row row-cols-lg-2 row-cols-sm-1 align-content-center">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="card text-center border border-white">
+                                    <div class="card-body">
+                                        <div class="col-lg-6 col-12  col-md-12">
+                                            <div>
+                                                <a class="btn" href="https://www.amazon.com/" role="button"><img
+                                                        src="images/amazon.png" alt="" href="#" height="100px"
+                                                        width="200px"></a>
+                                            </div>
+                                            <div>
+                                                <a class="btn" href="https://www.walmart.com/" role="button"><img
+                                                        src="images/walmart.png" alt="" href="#" height="100px"
+                                                        width="200px"></a>
+                                            </div>
+                                            <div>
+                                                <a class="btn" href="https://www.ebay.com/" role="button"><img
+                                                        src="images/EBay.png" alt="" href="#" height="100px"
+                                                        width="200px"></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center justify-content-center">
+                                <div class="card text-center border border-white">
+                                    <div class="card-body row gx-5">
+                                        <label for="exampleDataList ms-5" class="form-label">Find A Dealer</label>
+                                        <input class="form-control w-100" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Type to search...">
+                                        <datalist id="datalistOptions">
+                                            <option value="New York">
+                                            <option value="San Francisco">
+                                            <option value="Mexico City">
+                                            <option value="Toronto">
+                                            <option value="Los Angeles">
+                                            <option value="Houston">
+                                            <option value="Montreal">
+                                            <option value="Havana">
+                                        </datalist>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs -->
+        <section class="container my-5">
+            <div class="container">
+                <div class="d-flex align-items-center flex-column">
+                    <div class="col">
+                        <h1><span style="color: #E76F51;">Blogs</span></h1>
+                    </div>
+                    <div class="col mt-5 align-self-center">
+                        <div class="row row-cols-lg-3 row-cols-sm-1 align-content-center">
+                            <div class="d-flex justify-content-center">
+                                <div class="card shadow p-3 mb-5 bg-body rounded">
+                                    <img src="images/bike-blog-1.jpg" class="card-img-top" alt="...">
+
+                                    <div class="card-body">
+                                        <p class="card-text">Why you should travel on Motorbike...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <a target="_blank"
+                                                    href="https://bikeandroad.com/why-you-should-travel-on-motorbike/">READ
+                                                    MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="card shadow p-3 mb-5 bg-body rounded">
+                                    <img src="images/bike-blog-2.jpg" class="card-img-top" alt="...">
+
+                                    <div class="card-body">
+                                        <p class="card-text">Successful Adventure Motorcycle Blog...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <a target="_blank"
+                                                    href="https://www.advpulse.com/adv-prepping/how-to-adventure-motorcycle-blog/">READ
+                                                    MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="card shadow p-3 mb-5 bg-body rounded">
+                                    <img src="images/bike-blog-3.jpg" class="card-img-top" alt="...">
+
+                                    <div class="card-body">
+                                        <p class="card-text">Do motorbike tours in the Himalayas...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <a target="_blank"
+                                                    href="https://www.adventurenation.com/blog/must-do-motorbike-tours-in-the-himalayas/">READ
+                                                    MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -136,7 +549,31 @@
     <!-- Main End -->
 
     <!-- Footer -->
-    <footer>
+    <footer class="honda-cbr-footer-area">
+        <div class="container-fluid text-white w-100 p-5 honda-cbr-footer-container">
+            <div class="row align-items-center">
+                <div class="col-lg-10">
+                    <p><Span>Download Now</Span> &nbsp;&nbsp;&nbsp;&nbsp; <Span>Licence</Span></p>
+                    <p><Span>About</Span> &nbsp;&nbsp;&nbsp;&nbsp; <Span>Features</Span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <Span>Pricing</Span> &nbsp;&nbsp;&nbsp;&nbsp; <Span>Careers</Span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <Span>Help</Span> &nbsp;&nbsp;&nbsp;&nbsp; <Span>Privacy Policy</Span>
+                    </p>
+                    <p><Span>&copy; 2021 bike. All rights reserved by Tonmoy.</Span></p>
+                </div>
+                <div class="col-lg-2 mt-4">
+                    <h4 class="p-1">Get the App</h4>
+                    <div class="p-1">
+                        <img src="images/app-store.png" class="w-75 h-25" alt="">
+                    </div>
+                    <div class="p-1">
+                        <img src="images/google-play.png" class="w-75 h-25" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </footer>
     <!-- Footer -->

@@ -1,10 +1,45 @@
-.honda-cbr-button-color{
-    background-color: #E76F51;
-    color: #FFFFFF;
+.honda-cbr-button-color {
+  background-color: #e76f51;
+  color: #ffffff;
 }
-.honda-cbr-banner-paragraph-text-color{
-    color: #e0e0e0;
+.honda-cbr-color {
+  color: #e76f51;
 }
-.honda-cbr-banner-paragraph-text-size{
-    font-size: 14px;
+.honda-cbr-banner-paragraph-text-color {
+  color: #e0e0e0;
+}
+.honda-cbr-banner-paragraph-text-size {
+  font-size: 14px;
+}
+
+.honda-cbr-banner {
+  height: 550px;
+}
+
+/* Header Style */
+.honda-cbr-header {
+  width: 100%;
+  background-color: #264653;
+  height: 698px;
+}
+.login-button {
+  margin-left: 40px;
+}
+
+/* Featured Bikes */
+.featured-bikes-paragraph {
+  color: #e76f51;
+}
+.featured-bikes-gray-image {
+  filter: grayscale(1);
+}
+
+/* Footer */
+.honda-cbr-footer-area {
+  width: 100%;
+  height: 280px;
+  background-color: #264653;
+}
+.honda-cbr-footer-container {
+  height: 250px;
 }
